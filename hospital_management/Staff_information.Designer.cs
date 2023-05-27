@@ -29,232 +29,206 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gendercmb = new System.Windows.Forms.ComboBox();
-            this.staffidtext = new System.Windows.Forms.TextBox();
-            this.nametext = new System.Windows.Forms.TextBox();
-            this.positiontext = new System.Windows.Forms.TextBox();
-            this.salarytext = new System.Windows.Forms.TextBox();
-            this.contacttext = new System.Windows.Forms.TextBox();
-            this.addresstextt = new System.Windows.Forms.TextBox();
-            this.addbnt = new System.Windows.Forms.Button();
-            this.searchbtn = new System.Windows.Forms.Button();
-            this.updatebtn = new System.Windows.Forms.Button();
-            this.deletebtn = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.staffinfo_girdview = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.staffinfo_girdview)).BeginInit();
+            this.lblStaffID = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblPositon = new System.Windows.Forms.Label();
+            this.lblSalary = new System.Windows.Forms.Label();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.txtStaffID = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPosition = new System.Windows.Forms.TextBox();
+            this.txtSalary = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.rdbFemale = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(63, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(359, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 31);
+            this.label1.Size = new System.Drawing.Size(231, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Staff information";
+            this.label1.Text = "Staff Information";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblStaffID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(71, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Staff id";
+            this.lblStaffID.AutoSize = true;
+            this.lblStaffID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblStaffID.Location = new System.Drawing.Point(64, 173);
+            this.lblStaffID.Name = "lblStaffID";
+            this.lblStaffID.Size = new System.Drawing.Size(65, 20);
+            this.lblStaffID.TabIndex = 1;
+            this.lblStaffID.Text = "Staff ID";
             // 
-            // label3
+            // lblName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(71, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblName.Location = new System.Drawing.Point(64, 230);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(51, 20);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Name";
             // 
-            // label4
+            // lblGender
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(65, 144);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Gender";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblGender.Location = new System.Drawing.Point(64, 281);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(63, 20);
+            this.lblGender.TabIndex = 3;
+            this.lblGender.Text = "Gender";
             // 
-            // label5
+            // lblPositon
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(71, 201);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Position";
+            this.lblPositon.AutoSize = true;
+            this.lblPositon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPositon.Location = new System.Drawing.Point(64, 344);
+            this.lblPositon.Name = "lblPositon";
+            this.lblPositon.Size = new System.Drawing.Size(65, 20);
+            this.lblPositon.TabIndex = 4;
+            this.lblPositon.Text = "Position";
             // 
-            // label6
+            // lblSalary
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(415, 57);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Salary";
+            this.lblSalary.AutoSize = true;
+            this.lblSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblSalary.Location = new System.Drawing.Point(503, 171);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(53, 20);
+            this.lblSalary.TabIndex = 5;
+            this.lblSalary.Text = "Salary";
             // 
-            // label7
+            // lblContact
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(415, 106);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Contact";
+            this.lblContact.AutoSize = true;
+            this.lblContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblContact.Location = new System.Drawing.Point(503, 230);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(65, 20);
+            this.lblContact.TabIndex = 6;
+            this.lblContact.Text = "Contact";
             // 
-            // gendercmb
+            // txtStaffID
             // 
-            this.gendercmb.FormattingEnabled = true;
-            this.gendercmb.Location = new System.Drawing.Point(175, 146);
-            this.gendercmb.Name = "gendercmb";
-            this.gendercmb.Size = new System.Drawing.Size(121, 21);
-            this.gendercmb.TabIndex = 7;
+            this.txtStaffID.Location = new System.Drawing.Point(213, 173);
+            this.txtStaffID.Name = "txtStaffID";
+            this.txtStaffID.Size = new System.Drawing.Size(152, 20);
+            this.txtStaffID.TabIndex = 8;
+            this.txtStaffID.TextChanged += new System.EventHandler(this.staffidtext_TextChanged);
             // 
-            // staffidtext
+            // txtName
             // 
-            this.staffidtext.Location = new System.Drawing.Point(175, 64);
-            this.staffidtext.Name = "staffidtext";
-            this.staffidtext.Size = new System.Drawing.Size(100, 20);
-            this.staffidtext.TabIndex = 8;
+            this.txtName.Location = new System.Drawing.Point(213, 230);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(152, 20);
+            this.txtName.TabIndex = 9;
             // 
-            // nametext
+            // txtPosition
             // 
-            this.nametext.Location = new System.Drawing.Point(175, 99);
-            this.nametext.Name = "nametext";
-            this.nametext.Size = new System.Drawing.Size(100, 20);
-            this.nametext.TabIndex = 9;
+            this.txtPosition.Location = new System.Drawing.Point(213, 346);
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(152, 20);
+            this.txtPosition.TabIndex = 10;
             // 
-            // positiontext
+            // txtSalary
             // 
-            this.positiontext.Location = new System.Drawing.Point(175, 203);
-            this.positiontext.Name = "positiontext";
-            this.positiontext.Size = new System.Drawing.Size(100, 20);
-            this.positiontext.TabIndex = 10;
+            this.txtSalary.Location = new System.Drawing.Point(636, 175);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(168, 20);
+            this.txtSalary.TabIndex = 11;
             // 
-            // salarytext
+            // txtContact
             // 
-            this.salarytext.Location = new System.Drawing.Point(498, 57);
-            this.salarytext.Name = "salarytext";
-            this.salarytext.Size = new System.Drawing.Size(100, 20);
-            this.salarytext.TabIndex = 11;
+            this.txtContact.Location = new System.Drawing.Point(636, 232);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(168, 20);
+            this.txtContact.TabIndex = 12;
             // 
-            // contacttext
+            // txtAddress
             // 
-            this.contacttext.Location = new System.Drawing.Point(498, 106);
-            this.contacttext.Name = "contacttext";
-            this.contacttext.Size = new System.Drawing.Size(100, 20);
-            this.contacttext.TabIndex = 12;
+            this.txtAddress.Location = new System.Drawing.Point(636, 296);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(168, 20);
+            this.txtAddress.TabIndex = 13;
             // 
-            // addresstextt
+            // btnAdd
             // 
-            this.addresstextt.Location = new System.Drawing.Point(498, 156);
-            this.addresstextt.Name = "addresstextt";
-            this.addresstextt.Size = new System.Drawing.Size(100, 20);
-            this.addresstextt.TabIndex = 13;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(392, 408);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(145, 40);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // addbnt
+            // lblAddress
             // 
-            this.addbnt.Location = new System.Drawing.Point(220, 242);
-            this.addbnt.Name = "addbnt";
-            this.addbnt.Size = new System.Drawing.Size(98, 31);
-            this.addbnt.TabIndex = 14;
-            this.addbnt.Text = "Add";
-            this.addbnt.UseVisualStyleBackColor = true;
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAddress.Location = new System.Drawing.Point(503, 296);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(68, 20);
+            this.lblAddress.TabIndex = 18;
+            this.lblAddress.Text = "Address";
             // 
-            // searchbtn
+            // rdbMale
             // 
-            this.searchbtn.Location = new System.Drawing.Point(357, 242);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.Size = new System.Drawing.Size(94, 31);
-            this.searchbtn.TabIndex = 15;
-            this.searchbtn.Text = "Search";
-            this.searchbtn.UseVisualStyleBackColor = true;
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Location = new System.Drawing.Point(213, 284);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(48, 17);
+            this.rdbMale.TabIndex = 19;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "Male";
+            this.rdbMale.UseVisualStyleBackColor = true;
             // 
-            // updatebtn
+            // rdbFemale
             // 
-            this.updatebtn.Location = new System.Drawing.Point(479, 242);
-            this.updatebtn.Name = "updatebtn";
-            this.updatebtn.Size = new System.Drawing.Size(94, 31);
-            this.updatebtn.TabIndex = 16;
-            this.updatebtn.Text = "Update";
-            this.updatebtn.UseVisualStyleBackColor = true;
-            // 
-            // deletebtn
-            // 
-            this.deletebtn.Location = new System.Drawing.Point(600, 242);
-            this.deletebtn.Name = "deletebtn";
-            this.deletebtn.Size = new System.Drawing.Size(97, 31);
-            this.deletebtn.TabIndex = 17;
-            this.deletebtn.Text = "Delete";
-            this.deletebtn.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(400, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 20);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Address";
-            // 
-            // staffinfo_girdview
-            // 
-            this.staffinfo_girdview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.staffinfo_girdview.Location = new System.Drawing.Point(32, 288);
-            this.staffinfo_girdview.Name = "staffinfo_girdview";
-            this.staffinfo_girdview.Size = new System.Drawing.Size(739, 150);
-            this.staffinfo_girdview.TabIndex = 19;
+            this.rdbFemale.AutoSize = true;
+            this.rdbFemale.Location = new System.Drawing.Point(306, 284);
+            this.rdbFemale.Name = "rdbFemale";
+            this.rdbFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdbFemale.TabIndex = 20;
+            this.rdbFemale.TabStop = true;
+            this.rdbFemale.Text = "Female";
+            this.rdbFemale.UseVisualStyleBackColor = true;
             // 
             // Staff_information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.staffinfo_girdview);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.deletebtn);
-            this.Controls.Add(this.updatebtn);
-            this.Controls.Add(this.searchbtn);
-            this.Controls.Add(this.addbnt);
-            this.Controls.Add(this.addresstextt);
-            this.Controls.Add(this.contacttext);
-            this.Controls.Add(this.salarytext);
-            this.Controls.Add(this.positiontext);
-            this.Controls.Add(this.nametext);
-            this.Controls.Add(this.staffidtext);
-            this.Controls.Add(this.gendercmb);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1001, 598);
+            this.Controls.Add(this.rdbFemale);
+            this.Controls.Add(this.rdbMale);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.txtSalary);
+            this.Controls.Add(this.txtPosition);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtStaffID);
+            this.Controls.Add(this.lblContact);
+            this.Controls.Add(this.lblSalary);
+            this.Controls.Add(this.lblPositon);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblStaffID);
             this.Controls.Add(this.label1);
             this.Name = "Staff_information";
             this.Text = "Staff_information";
-            ((System.ComponentModel.ISupportInitialize)(this.staffinfo_girdview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,24 +237,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox gendercmb;
-        private System.Windows.Forms.TextBox staffidtext;
-        private System.Windows.Forms.TextBox nametext;
-        private System.Windows.Forms.TextBox positiontext;
-        private System.Windows.Forms.TextBox salarytext;
-        private System.Windows.Forms.TextBox contacttext;
-        private System.Windows.Forms.TextBox addresstextt;
-        private System.Windows.Forms.Button addbnt;
-        private System.Windows.Forms.Button searchbtn;
-        private System.Windows.Forms.Button updatebtn;
-        private System.Windows.Forms.Button deletebtn;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView staffinfo_girdview;
+        private System.Windows.Forms.Label lblStaffID;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblPositon;
+        private System.Windows.Forms.Label lblSalary;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.TextBox txtStaffID;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPosition;
+        private System.Windows.Forms.TextBox txtSalary;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.RadioButton rdbMale;
+        private System.Windows.Forms.RadioButton rdbFemale;
     }
 }

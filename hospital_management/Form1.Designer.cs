@@ -28,71 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.usernametext = new System.Windows.Forms.TextBox();
-            this.passwordtext = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
-            this.loginbtn = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // usernametext
+            // txtUserName
             // 
-            this.usernametext.Location = new System.Drawing.Point(369, 149);
-            this.usernametext.Name = "usernametext";
-            this.usernametext.Size = new System.Drawing.Size(136, 20);
-            this.usernametext.TabIndex = 0;
+            this.txtUserName.Location = new System.Drawing.Point(445, 149);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(136, 20);
+            this.txtUserName.TabIndex = 0;
+            this.txtUserName.UseWaitCursor = true;
             // 
-            // passwordtext
+            // txtPassword
             // 
-            this.passwordtext.Location = new System.Drawing.Point(369, 225);
-            this.passwordtext.Name = "passwordtext";
-            this.passwordtext.Size = new System.Drawing.Size(136, 20);
-            this.passwordtext.TabIndex = 1;
+            this.txtPassword.Location = new System.Drawing.Point(445, 227);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(136, 20);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseWaitCursor = true;
             // 
-            // label1
+            // lblUserName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(227, 149);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User Name";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblUserName.Location = new System.Drawing.Point(272, 147);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(85, 20);
+            this.lblUserName.TabIndex = 2;
+            this.lblUserName.Text = "UserName";
+            this.lblUserName.UseWaitCursor = true;
             // 
-            // label2
+            // lblPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(227, 225);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPassword.Location = new System.Drawing.Point(272, 225);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password";
+            this.lblPassword.UseWaitCursor = true;
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label3.Location = new System.Drawing.Point(274, 53);
+            this.Label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Label3.Location = new System.Drawing.Point(294, 52);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(282, 46);
+            this.Label3.Size = new System.Drawing.Size(299, 25);
             this.Label3.TabIndex = 4;
-            this.Label3.Text = "LOG IN FORM";
+            this.Label3.Text = "Hospital Management System";
+            this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label3.UseWaitCursor = true;
             // 
-            // loginbtn
+            // btnLogin
             // 
-            this.loginbtn.Location = new System.Drawing.Point(269, 287);
-            this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(92, 33);
-            this.loginbtn.TabIndex = 5;
-            this.loginbtn.Text = "Login";
-            this.loginbtn.UseVisualStyleBackColor = true;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnLogin.Location = new System.Drawing.Point(299, 313);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(116, 35);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseWaitCursor = true;
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnSignUp.Location = new System.Drawing.Point(465, 313);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(116, 35);
+            this.btnSignUp.TabIndex = 6;
+            this.btnSignUp.Text = "SignUp";
+            this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.UseWaitCursor = true;
             // 
             // Form1
             // 
@@ -100,15 +119,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 461);
-            this.Controls.Add(this.loginbtn);
+            this.ClientSize = new System.Drawing.Size(1001, 541);
+            this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.Label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.passwordtext);
-            this.Controls.Add(this.usernametext);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUserName);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserName);
             this.Name = "Form1";
             this.Tag = "";
             this.Text = "Hospital_Management";
@@ -120,12 +139,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox usernametext;
-        private System.Windows.Forms.TextBox passwordtext;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label Label3;
-        private System.Windows.Forms.Button loginbtn;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }
 

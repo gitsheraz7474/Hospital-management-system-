@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace hospital_management
 {
-    public partial class Patient_Information : Form
+    public partial class View_Doctor_Information : Form
     {
-        public Patient_Information()
+        public View_Doctor_Information()
         {
             InitializeComponent();
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

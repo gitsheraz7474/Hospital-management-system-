@@ -84,11 +84,35 @@
     <Compile Include="Room_information.Designer.cs">
       <DependentUpon>Room_information.cs</DependentUpon>
     </Compile>
+    <Compile Include="signup_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup_form.Designer.cs">
+      <DependentUpon>signup_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff_information.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Staff_information.Designer.cs">
       <DependentUpon>Staff_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_patient_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_patient_Information.Designer.cs">
+      <DependentUpon>view_patient_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_Room_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_Room_Information.Designer.cs">
+      <DependentUpon>view_Room_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Staff_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Staff_Information.Designer.cs">
+      <DependentUpon>View_Staff_Information.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -117,8 +141,20 @@
     <EmbeddedResource Include="Room_information.resx">
       <DependentUpon>Room_information.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="signup_form.resx">
+      <DependentUpon>signup_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff_information.resx">
       <DependentUpon>Staff_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_patient_Information.resx">
+      <DependentUpon>view_patient_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_Room_Information.resx">
+      <DependentUpon>view_Room_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Staff_Information.resx">
+      <DependentUpon>View_Staff_Information.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

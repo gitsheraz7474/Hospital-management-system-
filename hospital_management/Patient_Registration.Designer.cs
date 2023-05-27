@@ -29,276 +29,256 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.nametext = new System.Windows.Forms.TextBox();
-            this.patientidtext = new System.Windows.Forms.TextBox();
-            this.agetext = new System.Windows.Forms.TextBox();
-            this.contacttext = new System.Windows.Forms.TextBox();
-            this.datetext = new System.Windows.Forms.TextBox();
-            this.addresstext = new System.Windows.Forms.TextBox();
-            this.diseasetext = new System.Windows.Forms.TextBox();
-            this.statustext = new System.Windows.Forms.TextBox();
-            this.buidingtext = new System.Windows.Forms.TextBox();
-            this.roomtypetext = new System.Windows.Forms.TextBox();
-            this.pricetext = new System.Windows.Forms.TextBox();
-            this.roomnotext = new System.Windows.Forms.TextBox();
             this.addbtn = new System.Windows.Forms.Button();
-            this.gendercmb = new System.Windows.Forms.ComboBox();
+            this.cmbRoomType = new System.Windows.Forms.ComboBox();
+            this.dtpCheckOut = new System.Windows.Forms.DateTimePicker();
+            this.dtpCheckIn = new System.Windows.Forms.DateTimePicker();
+            this.rdbFemale = new System.Windows.Forms.RadioButton();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
+            this.txtTotalAmount = new System.Windows.Forms.TextBox();
+            this.lblCheckOut = new System.Windows.Forms.Label();
+            this.txtRoomNO = new System.Windows.Forms.TextBox();
+            this.txtPatientDisease = new System.Windows.Forms.TextBox();
+            this.txtPatientcontact = new System.Windows.Forms.TextBox();
+            this.txtPatientAge = new System.Windows.Forms.TextBox();
+            this.txtPatientID = new System.Windows.Forms.TextBox();
+            this.txtPatientName = new System.Windows.Forms.TextBox();
+            this.lblRoomNo = new System.Windows.Forms.Label();
+            this.lblDisease = new System.Windows.Forms.Label();
+            this.lblRoomType = new System.Windows.Forms.Label();
+            this.lblCheckIn = new System.Windows.Forms.Label();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.lblPateintage = new System.Windows.Forms.Label();
+            this.lblPatientGender = new System.Windows.Forms.Label();
+            this.lblPatientid = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(42, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(347, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 31);
+            this.label1.Size = new System.Drawing.Size(298, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Register New Patient ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // addbtn
+            // 
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.Location = new System.Drawing.Point(453, 434);
+            this.addbtn.Name = "addbtn";
+            this.addbtn.Size = new System.Drawing.Size(147, 38);
+            this.addbtn.TabIndex = 26;
+            this.addbtn.Text = "Add";
+            this.addbtn.UseVisualStyleBackColor = true;
+            // 
+            // cmbRoomType
+            // 
+            this.cmbRoomType.FormattingEnabled = true;
+            this.cmbRoomType.Location = new System.Drawing.Point(656, 258);
+            this.cmbRoomType.Name = "cmbRoomType";
+            this.cmbRoomType.Size = new System.Drawing.Size(200, 21);
+            this.cmbRoomType.TabIndex = 88;
+            // 
+            // dtpCheckOut
+            // 
+            this.dtpCheckOut.Location = new System.Drawing.Point(656, 204);
+            this.dtpCheckOut.Name = "dtpCheckOut";
+            this.dtpCheckOut.Size = new System.Drawing.Size(200, 20);
+            this.dtpCheckOut.TabIndex = 87;
+            // 
+            // dtpCheckIn
+            // 
+            this.dtpCheckIn.Location = new System.Drawing.Point(656, 151);
+            this.dtpCheckIn.Name = "dtpCheckIn";
+            this.dtpCheckIn.Size = new System.Drawing.Size(200, 20);
+            this.dtpCheckIn.TabIndex = 86;
+            // 
+            // rdbFemale
+            // 
+            this.rdbFemale.AutoSize = true;
+            this.rdbFemale.Location = new System.Drawing.Point(303, 259);
+            this.rdbFemale.Name = "rdbFemale";
+            this.rdbFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdbFemale.TabIndex = 85;
+            this.rdbFemale.TabStop = true;
+            this.rdbFemale.Text = "Female";
+            this.rdbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rdbMale
+            // 
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Location = new System.Drawing.Point(235, 259);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(48, 17);
+            this.rdbMale.TabIndex = 84;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "Male";
+            this.rdbMale.UseVisualStyleBackColor = true;
+            // 
+            // lblTotalAmount
+            // 
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTotalAmount.Location = new System.Drawing.Point(510, 346);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(104, 20);
+            this.lblTotalAmount.TabIndex = 83;
+            this.lblTotalAmount.Text = "Total Amount";
+            // 
+            // txtTotalAmount
+            // 
+            this.txtTotalAmount.Location = new System.Drawing.Point(656, 348);
+            this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.Size = new System.Drawing.Size(200, 20);
+            this.txtTotalAmount.TabIndex = 82;
+            // 
+            // lblCheckOut
+            // 
+            this.lblCheckOut.AutoSize = true;
+            this.lblCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblCheckOut.Location = new System.Drawing.Point(510, 204);
+            this.lblCheckOut.Name = "lblCheckOut";
+            this.lblCheckOut.Size = new System.Drawing.Size(84, 20);
+            this.lblCheckOut.TabIndex = 81;
+            this.lblCheckOut.Text = "Check Out";
+            // 
+            // txtRoomNO
+            // 
+            this.txtRoomNO.Location = new System.Drawing.Point(656, 307);
+            this.txtRoomNO.Name = "txtRoomNO";
+            this.txtRoomNO.Size = new System.Drawing.Size(200, 20);
+            this.txtRoomNO.TabIndex = 80;
+            // 
+            // txtPatientDisease
+            // 
+            this.txtPatientDisease.Location = new System.Drawing.Point(235, 348);
+            this.txtPatientDisease.Name = "txtPatientDisease";
+            this.txtPatientDisease.Size = new System.Drawing.Size(152, 20);
+            this.txtPatientDisease.TabIndex = 79;
+            // 
+            // txtPatientcontact
+            // 
+            this.txtPatientcontact.Location = new System.Drawing.Point(235, 401);
+            this.txtPatientcontact.Name = "txtPatientcontact";
+            this.txtPatientcontact.Size = new System.Drawing.Size(152, 20);
+            this.txtPatientcontact.TabIndex = 78;
+            // 
+            // txtPatientAge
+            // 
+            this.txtPatientAge.Location = new System.Drawing.Point(235, 305);
+            this.txtPatientAge.Name = "txtPatientAge";
+            this.txtPatientAge.Size = new System.Drawing.Size(152, 20);
+            this.txtPatientAge.TabIndex = 77;
+            // 
+            // txtPatientID
+            // 
+            this.txtPatientID.Location = new System.Drawing.Point(235, 204);
+            this.txtPatientID.Name = "txtPatientID";
+            this.txtPatientID.Size = new System.Drawing.Size(152, 20);
+            this.txtPatientID.TabIndex = 76;
+            // 
+            // txtPatientName
+            // 
+            this.txtPatientName.Location = new System.Drawing.Point(235, 151);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(152, 20);
+            this.txtPatientName.TabIndex = 75;
+            // 
+            // lblRoomNo
+            // 
+            this.lblRoomNo.AutoSize = true;
+            this.lblRoomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRoomNo.Location = new System.Drawing.Point(510, 305);
+            this.lblRoomNo.Name = "lblRoomNo";
+            this.lblRoomNo.Size = new System.Drawing.Size(79, 20);
+            this.lblRoomNo.TabIndex = 74;
+            this.lblRoomNo.Text = "Room NO";
+            // 
+            // lblDisease
+            // 
+            this.lblDisease.AutoSize = true;
+            this.lblDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblDisease.Location = new System.Drawing.Point(87, 346);
+            this.lblDisease.Name = "lblDisease";
+            this.lblDisease.Size = new System.Drawing.Size(67, 20);
+            this.lblDisease.TabIndex = 73;
+            this.lblDisease.Text = "Disease";
+            // 
+            // lblRoomType
+            // 
+            this.lblRoomType.AutoSize = true;
+            this.lblRoomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRoomType.Location = new System.Drawing.Point(510, 259);
+            this.lblRoomType.Name = "lblRoomType";
+            this.lblRoomType.Size = new System.Drawing.Size(90, 20);
+            this.lblRoomType.TabIndex = 72;
+            this.lblRoomType.Text = "Room Type";
+            // 
+            // lblCheckIn
+            // 
+            this.lblCheckIn.AutoSize = true;
+            this.lblCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblCheckIn.Location = new System.Drawing.Point(510, 151);
+            this.lblCheckIn.Name = "lblCheckIn";
+            this.lblCheckIn.Size = new System.Drawing.Size(72, 20);
+            this.lblCheckIn.TabIndex = 71;
+            this.lblCheckIn.Text = "Check In";
+            // 
+            // lblContact
+            // 
+            this.lblContact.AutoSize = true;
+            this.lblContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblContact.Location = new System.Drawing.Point(87, 399);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(65, 20);
+            this.lblContact.TabIndex = 70;
+            this.lblContact.Text = "Contact";
+            // 
+            // lblPateintage
+            // 
+            this.lblPateintage.AutoSize = true;
+            this.lblPateintage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPateintage.Location = new System.Drawing.Point(87, 299);
+            this.lblPateintage.Name = "lblPateintage";
+            this.lblPateintage.Size = new System.Drawing.Size(92, 20);
+            this.lblPateintage.TabIndex = 69;
+            this.lblPateintage.Text = "Patient Age";
+            // 
+            // lblPatientGender
+            // 
+            this.lblPatientGender.AutoSize = true;
+            this.lblPatientGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPatientGender.Location = new System.Drawing.Point(87, 256);
+            this.lblPatientGender.Name = "lblPatientGender";
+            this.lblPatientGender.Size = new System.Drawing.Size(117, 20);
+            this.lblPatientGender.TabIndex = 68;
+            this.lblPatientGender.Text = "Patient Gender";
+            // 
+            // lblPatientid
+            // 
+            this.lblPatientid.AutoSize = true;
+            this.lblPatientid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPatientid.Location = new System.Drawing.Point(87, 202);
+            this.lblPatientid.Name = "lblPatientid";
+            this.lblPatientid.Size = new System.Drawing.Size(80, 20);
+            this.lblPatientid.TabIndex = 67;
+            this.lblPatientid.Text = "Patient ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(43, 50);
+            this.label2.Location = new System.Drawing.Point(87, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(17, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Patient Id";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(28, 128);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Gender";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(44, 166);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Age";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(44, 251);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Contact";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(44, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Date";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(44, 292);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 20);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Address";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(303, 166);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 20);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Room Type";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(303, 50);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Disease";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label11.Location = new System.Drawing.Point(303, 130);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 20);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Building";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label12.Location = new System.Drawing.Point(303, 90);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 20);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Status";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label13.Location = new System.Drawing.Point(297, 209);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 20);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Room NO";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(297, 251);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 20);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Price";
-            // 
-            // nametext
-            // 
-            this.nametext.Location = new System.Drawing.Point(112, 48);
-            this.nametext.Name = "nametext";
-            this.nametext.Size = new System.Drawing.Size(100, 20);
-            this.nametext.TabIndex = 14;
-            // 
-            // patientidtext
-            // 
-            this.patientidtext.Location = new System.Drawing.Point(112, 90);
-            this.patientidtext.Name = "patientidtext";
-            this.patientidtext.Size = new System.Drawing.Size(100, 20);
-            this.patientidtext.TabIndex = 15;
-            // 
-            // agetext
-            // 
-            this.agetext.Location = new System.Drawing.Point(112, 166);
-            this.agetext.Name = "agetext";
-            this.agetext.Size = new System.Drawing.Size(100, 20);
-            this.agetext.TabIndex = 16;
-            // 
-            // contacttext
-            // 
-            this.contacttext.Location = new System.Drawing.Point(112, 251);
-            this.contacttext.Name = "contacttext";
-            this.contacttext.Size = new System.Drawing.Size(100, 20);
-            this.contacttext.TabIndex = 17;
-            // 
-            // datetext
-            // 
-            this.datetext.Location = new System.Drawing.Point(112, 209);
-            this.datetext.Name = "datetext";
-            this.datetext.Size = new System.Drawing.Size(100, 20);
-            this.datetext.TabIndex = 18;
-            // 
-            // addresstext
-            // 
-            this.addresstext.Location = new System.Drawing.Point(112, 292);
-            this.addresstext.Name = "addresstext";
-            this.addresstext.Size = new System.Drawing.Size(100, 20);
-            this.addresstext.TabIndex = 19;
-            // 
-            // diseasetext
-            // 
-            this.diseasetext.Location = new System.Drawing.Point(400, 48);
-            this.diseasetext.Name = "diseasetext";
-            this.diseasetext.Size = new System.Drawing.Size(100, 20);
-            this.diseasetext.TabIndex = 20;
-            // 
-            // statustext
-            // 
-            this.statustext.Location = new System.Drawing.Point(400, 87);
-            this.statustext.Name = "statustext";
-            this.statustext.Size = new System.Drawing.Size(100, 20);
-            this.statustext.TabIndex = 21;
-            // 
-            // buidingtext
-            // 
-            this.buidingtext.Location = new System.Drawing.Point(400, 123);
-            this.buidingtext.Name = "buidingtext";
-            this.buidingtext.Size = new System.Drawing.Size(100, 20);
-            this.buidingtext.TabIndex = 22;
-            // 
-            // roomtypetext
-            // 
-            this.roomtypetext.Location = new System.Drawing.Point(400, 163);
-            this.roomtypetext.Name = "roomtypetext";
-            this.roomtypetext.Size = new System.Drawing.Size(100, 20);
-            this.roomtypetext.TabIndex = 23;
-            // 
-            // pricetext
-            // 
-            this.pricetext.Location = new System.Drawing.Point(400, 251);
-            this.pricetext.Name = "pricetext";
-            this.pricetext.Size = new System.Drawing.Size(100, 20);
-            this.pricetext.TabIndex = 24;
-            // 
-            // roomnotext
-            // 
-            this.roomnotext.Location = new System.Drawing.Point(400, 209);
-            this.roomnotext.Name = "roomnotext";
-            this.roomnotext.Size = new System.Drawing.Size(100, 20);
-            this.roomnotext.TabIndex = 25;
-            // 
-            // addbtn
-            // 
-            this.addbtn.Location = new System.Drawing.Point(272, 327);
-            this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(87, 28);
-            this.addbtn.TabIndex = 26;
-            this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
-            // 
-            // gendercmb
-            // 
-            this.gendercmb.FormattingEnabled = true;
-            this.gendercmb.Location = new System.Drawing.Point(112, 130);
-            this.gendercmb.Name = "gendercmb";
-            this.gendercmb.Size = new System.Drawing.Size(121, 21);
-            this.gendercmb.TabIndex = 28;
+            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.TabIndex = 66;
+            this.label2.Text = "Patient Name";
             // 
             // Patient_Registration
             // 
@@ -306,34 +286,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(924, 450);
-            this.Controls.Add(this.gendercmb);
-            this.Controls.Add(this.addbtn);
-            this.Controls.Add(this.roomnotext);
-            this.Controls.Add(this.pricetext);
-            this.Controls.Add(this.roomtypetext);
-            this.Controls.Add(this.buidingtext);
-            this.Controls.Add(this.statustext);
-            this.Controls.Add(this.diseasetext);
-            this.Controls.Add(this.addresstext);
-            this.Controls.Add(this.datetext);
-            this.Controls.Add(this.contacttext);
-            this.Controls.Add(this.agetext);
-            this.Controls.Add(this.patientidtext);
-            this.Controls.Add(this.nametext);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(1001, 598);
+            this.Controls.Add(this.cmbRoomType);
+            this.Controls.Add(this.dtpCheckOut);
+            this.Controls.Add(this.dtpCheckIn);
+            this.Controls.Add(this.rdbFemale);
+            this.Controls.Add(this.rdbMale);
+            this.Controls.Add(this.lblTotalAmount);
+            this.Controls.Add(this.txtTotalAmount);
+            this.Controls.Add(this.lblCheckOut);
+            this.Controls.Add(this.txtRoomNO);
+            this.Controls.Add(this.txtPatientDisease);
+            this.Controls.Add(this.txtPatientcontact);
+            this.Controls.Add(this.txtPatientAge);
+            this.Controls.Add(this.txtPatientID);
+            this.Controls.Add(this.txtPatientName);
+            this.Controls.Add(this.lblRoomNo);
+            this.Controls.Add(this.lblDisease);
+            this.Controls.Add(this.lblRoomType);
+            this.Controls.Add(this.lblCheckIn);
+            this.Controls.Add(this.lblContact);
+            this.Controls.Add(this.lblPateintage);
+            this.Controls.Add(this.lblPatientGender);
+            this.Controls.Add(this.lblPatientid);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label1);
             this.Name = "Patient_Registration";
             this.Text = "Patient_Registration";
@@ -346,32 +323,29 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox nametext;
-        private System.Windows.Forms.TextBox patientidtext;
-        private System.Windows.Forms.TextBox agetext;
-        private System.Windows.Forms.TextBox contacttext;
-        private System.Windows.Forms.TextBox datetext;
-        private System.Windows.Forms.TextBox addresstext;
-        private System.Windows.Forms.TextBox diseasetext;
-        private System.Windows.Forms.TextBox statustext;
-        private System.Windows.Forms.TextBox buidingtext;
-        private System.Windows.Forms.TextBox roomtypetext;
-        private System.Windows.Forms.TextBox pricetext;
-        private System.Windows.Forms.TextBox roomnotext;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.ComboBox gendercmb;
+        private System.Windows.Forms.ComboBox cmbRoomType;
+        private System.Windows.Forms.DateTimePicker dtpCheckOut;
+        private System.Windows.Forms.DateTimePicker dtpCheckIn;
+        private System.Windows.Forms.RadioButton rdbFemale;
+        private System.Windows.Forms.RadioButton rdbMale;
+        private System.Windows.Forms.Label lblTotalAmount;
+        private System.Windows.Forms.TextBox txtTotalAmount;
+        private System.Windows.Forms.Label lblCheckOut;
+        private System.Windows.Forms.TextBox txtRoomNO;
+        private System.Windows.Forms.TextBox txtPatientDisease;
+        private System.Windows.Forms.TextBox txtPatientcontact;
+        private System.Windows.Forms.TextBox txtPatientAge;
+        private System.Windows.Forms.TextBox txtPatientID;
+        private System.Windows.Forms.TextBox txtPatientName;
+        private System.Windows.Forms.Label lblRoomNo;
+        private System.Windows.Forms.Label lblDisease;
+        private System.Windows.Forms.Label lblRoomType;
+        private System.Windows.Forms.Label lblCheckIn;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.Label lblPateintage;
+        private System.Windows.Forms.Label lblPatientGender;
+        private System.Windows.Forms.Label lblPatientid;
+        private System.Windows.Forms.Label label2;
     }
 }

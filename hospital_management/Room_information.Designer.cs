@@ -29,191 +29,190 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buildingnotext = new System.Windows.Forms.TextBox();
-            this.roomtypetext = new System.Windows.Forms.TextBox();
-            this.roomnotext = new System.Windows.Forms.TextBox();
-            this.noofbedtext = new System.Windows.Forms.TextBox();
-            this.pricetext = new System.Windows.Forms.TextBox();
-            this.statustext = new System.Windows.Forms.TextBox();
-            this.addbtn = new System.Windows.Forms.Button();
-            this.roominfo_gridview = new System.Windows.Forms.DataGridView();
+            this.lblRoomType = new System.Windows.Forms.Label();
+            this.lblNoofBed = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblRoomNo = new System.Windows.Forms.Label();
+            this.txtRoomNo = new System.Windows.Forms.TextBox();
+            this.txtNoofBed = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.bntAdd = new System.Windows.Forms.Button();
             this.viewbtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.roominfo_gridview)).BeginInit();
+            this.txtPatientID = new System.Windows.Forms.TextBox();
+            this.lblPatientID = new System.Windows.Forms.Label();
+            this.cmbRoomType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(67, 13);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(364, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 31);
+            this.label1.Size = new System.Drawing.Size(229, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Room information";
+            this.label1.Text = "Room Information";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblRoomType
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(41, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Building No";
+            this.lblRoomType.AutoSize = true;
+            this.lblRoomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRoomType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRoomType.Location = new System.Drawing.Point(119, 221);
+            this.lblRoomType.Name = "lblRoomType";
+            this.lblRoomType.Size = new System.Drawing.Size(90, 20);
+            this.lblRoomType.TabIndex = 2;
+            this.lblRoomType.Text = "Room Type";
             // 
-            // label3
+            // lblNoofBed
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(40, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Room Type";
+            this.lblNoofBed.AutoSize = true;
+            this.lblNoofBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblNoofBed.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNoofBed.Location = new System.Drawing.Point(509, 157);
+            this.lblNoofBed.Name = "lblNoofBed";
+            this.lblNoofBed.Size = new System.Drawing.Size(80, 20);
+            this.lblNoofBed.TabIndex = 3;
+            this.lblNoofBed.Text = "No.of Bed";
             // 
-            // label4
+            // lblPrice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(360, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "No.of Bed";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPrice.Location = new System.Drawing.Point(509, 219);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(44, 20);
+            this.lblPrice.TabIndex = 4;
+            this.lblPrice.Text = "Price";
             // 
-            // label5
+            // lblStatus
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(375, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Price";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStatus.Location = new System.Drawing.Point(509, 285);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(56, 20);
+            this.lblStatus.TabIndex = 5;
+            this.lblStatus.Text = "Status";
             // 
-            // label6
+            // lblRoomNo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(375, 150);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Status";
+            this.lblRoomNo.AutoSize = true;
+            this.lblRoomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRoomNo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRoomNo.Location = new System.Drawing.Point(119, 287);
+            this.lblRoomNo.Name = "lblRoomNo";
+            this.lblRoomNo.Size = new System.Drawing.Size(76, 20);
+            this.lblRoomNo.TabIndex = 6;
+            this.lblRoomNo.Text = "Room No";
+            this.lblRoomNo.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label7
+            // txtRoomNo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(41, 165);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Room No";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.txtRoomNo.Location = new System.Drawing.Point(259, 287);
+            this.txtRoomNo.Name = "txtRoomNo";
+            this.txtRoomNo.Size = new System.Drawing.Size(146, 20);
+            this.txtRoomNo.TabIndex = 9;
             // 
-            // buildingnotext
+            // txtNoofBed
             // 
-            this.buildingnotext.Location = new System.Drawing.Point(147, 59);
-            this.buildingnotext.Name = "buildingnotext";
-            this.buildingnotext.Size = new System.Drawing.Size(100, 20);
-            this.buildingnotext.TabIndex = 7;
+            this.txtNoofBed.Location = new System.Drawing.Point(652, 159);
+            this.txtNoofBed.Name = "txtNoofBed";
+            this.txtNoofBed.Size = new System.Drawing.Size(142, 20);
+            this.txtNoofBed.TabIndex = 10;
             // 
-            // roomtypetext
+            // txtPrice
             // 
-            this.roomtypetext.Location = new System.Drawing.Point(147, 114);
-            this.roomtypetext.Name = "roomtypetext";
-            this.roomtypetext.Size = new System.Drawing.Size(100, 20);
-            this.roomtypetext.TabIndex = 8;
+            this.txtPrice.Location = new System.Drawing.Point(652, 221);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(142, 20);
+            this.txtPrice.TabIndex = 11;
             // 
-            // roomnotext
+            // txtStatus
             // 
-            this.roomnotext.Location = new System.Drawing.Point(147, 165);
-            this.roomnotext.Name = "roomnotext";
-            this.roomnotext.Size = new System.Drawing.Size(100, 20);
-            this.roomnotext.TabIndex = 9;
+            this.txtStatus.Location = new System.Drawing.Point(652, 287);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(142, 20);
+            this.txtStatus.TabIndex = 12;
             // 
-            // noofbedtext
+            // bntAdd
             // 
-            this.noofbedtext.Location = new System.Drawing.Point(468, 52);
-            this.noofbedtext.Name = "noofbedtext";
-            this.noofbedtext.Size = new System.Drawing.Size(100, 20);
-            this.noofbedtext.TabIndex = 10;
-            // 
-            // pricetext
-            // 
-            this.pricetext.Location = new System.Drawing.Point(468, 94);
-            this.pricetext.Name = "pricetext";
-            this.pricetext.Size = new System.Drawing.Size(100, 20);
-            this.pricetext.TabIndex = 11;
-            // 
-            // statustext
-            // 
-            this.statustext.Location = new System.Drawing.Point(468, 147);
-            this.statustext.Name = "statustext";
-            this.statustext.Size = new System.Drawing.Size(100, 20);
-            this.statustext.TabIndex = 12;
-            // 
-            // addbtn
-            // 
-            this.addbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addbtn.Location = new System.Drawing.Point(238, 212);
-            this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(75, 23);
-            this.addbtn.TabIndex = 13;
-            this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
-            // 
-            // roominfo_gridview
-            // 
-            this.roominfo_gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.roominfo_gridview.Location = new System.Drawing.Point(35, 258);
-            this.roominfo_gridview.Name = "roominfo_gridview";
-            this.roominfo_gridview.Size = new System.Drawing.Size(716, 180);
-            this.roominfo_gridview.TabIndex = 14;
+            this.bntAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntAdd.Location = new System.Drawing.Point(370, 390);
+            this.bntAdd.Name = "bntAdd";
+            this.bntAdd.Size = new System.Drawing.Size(109, 32);
+            this.bntAdd.TabIndex = 13;
+            this.bntAdd.Text = "Add";
+            this.bntAdd.UseVisualStyleBackColor = true;
             // 
             // viewbtn
             // 
+            this.viewbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.viewbtn.Location = new System.Drawing.Point(367, 212);
+            this.viewbtn.Location = new System.Drawing.Point(565, 390);
             this.viewbtn.Name = "viewbtn";
-            this.viewbtn.Size = new System.Drawing.Size(75, 23);
+            this.viewbtn.Size = new System.Drawing.Size(110, 32);
             this.viewbtn.TabIndex = 15;
             this.viewbtn.Text = "View";
             this.viewbtn.UseVisualStyleBackColor = true;
+            // 
+            // txtPatientID
+            // 
+            this.txtPatientID.Location = new System.Drawing.Point(259, 157);
+            this.txtPatientID.Name = "txtPatientID";
+            this.txtPatientID.Size = new System.Drawing.Size(146, 20);
+            this.txtPatientID.TabIndex = 17;
+            // 
+            // lblPatientID
+            // 
+            this.lblPatientID.AutoSize = true;
+            this.lblPatientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPatientID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPatientID.Location = new System.Drawing.Point(119, 157);
+            this.lblPatientID.Name = "lblPatientID";
+            this.lblPatientID.Size = new System.Drawing.Size(80, 20);
+            this.lblPatientID.TabIndex = 16;
+            this.lblPatientID.Text = "Patient ID";
+            // 
+            // cmbRoomType
+            // 
+            this.cmbRoomType.FormattingEnabled = true;
+            this.cmbRoomType.Location = new System.Drawing.Point(259, 221);
+            this.cmbRoomType.Name = "cmbRoomType";
+            this.cmbRoomType.Size = new System.Drawing.Size(146, 21);
+            this.cmbRoomType.TabIndex = 18;
             // 
             // Room_information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1001, 598);
+            this.Controls.Add(this.cmbRoomType);
+            this.Controls.Add(this.txtPatientID);
+            this.Controls.Add(this.lblPatientID);
             this.Controls.Add(this.viewbtn);
-            this.Controls.Add(this.roominfo_gridview);
-            this.Controls.Add(this.addbtn);
-            this.Controls.Add(this.statustext);
-            this.Controls.Add(this.pricetext);
-            this.Controls.Add(this.noofbedtext);
-            this.Controls.Add(this.roomnotext);
-            this.Controls.Add(this.roomtypetext);
-            this.Controls.Add(this.buildingnotext);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.bntAdd);
+            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtNoofBed);
+            this.Controls.Add(this.txtRoomNo);
+            this.Controls.Add(this.lblRoomNo);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.lblNoofBed);
+            this.Controls.Add(this.lblRoomType);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Room_information";
             this.Text = "Room_information";
-            ((System.ComponentModel.ISupportInitialize)(this.roominfo_gridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,20 +221,19 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox buildingnotext;
-        private System.Windows.Forms.TextBox roomtypetext;
-        private System.Windows.Forms.TextBox roomnotext;
-        private System.Windows.Forms.TextBox noofbedtext;
-        private System.Windows.Forms.TextBox pricetext;
-        private System.Windows.Forms.TextBox statustext;
-        private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.DataGridView roominfo_gridview;
+        private System.Windows.Forms.Label lblRoomType;
+        private System.Windows.Forms.Label lblNoofBed;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblRoomNo;
+        private System.Windows.Forms.TextBox txtRoomNo;
+        private System.Windows.Forms.TextBox txtNoofBed;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Button bntAdd;
         private System.Windows.Forms.Button viewbtn;
+        private System.Windows.Forms.TextBox txtPatientID;
+        private System.Windows.Forms.Label lblPatientID;
+        private System.Windows.Forms.ComboBox cmbRoomType;
     }
 }

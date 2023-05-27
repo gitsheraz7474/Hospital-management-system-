@@ -28,89 +28,142 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
-            this.patientregistraionlabel = new System.Windows.Forms.Label();
-            this.patientinfolabel = new System.Windows.Forms.Label();
-            this.checkoutlabel = new System.Windows.Forms.Label();
-            this.roominfolabel = new System.Windows.Forms.Label();
-            this.addstafflabel = new System.Windows.Forms.Label();
+            this.btnPatientReg = new System.Windows.Forms.Button();
+            this.btnPatientInfo = new System.Windows.Forms.Button();
+            this.btnPatientCheckOut = new System.Windows.Forms.Button();
+            this.btnRoomInfo = new System.Windows.Forms.Button();
+            this.btnAddStaff = new System.Windows.Forms.Button();
+            this.btnAddDoctor = new System.Windows.Forms.Button();
+            this.btnViewStaff = new System.Windows.Forms.Button();
+            this.btnViewDoctor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(251, 19);
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(287, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 46);
+            this.label1.Size = new System.Drawing.Size(299, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Hospital System";
+            this.label1.Text = "Hospital Management System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // patientregistraionlabel
+            // btnPatientReg
             // 
-            this.patientregistraionlabel.AutoSize = true;
-            this.patientregistraionlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.patientregistraionlabel.Location = new System.Drawing.Point(-2, 92);
-            this.patientregistraionlabel.Name = "patientregistraionlabel";
-            this.patientregistraionlabel.Size = new System.Drawing.Size(179, 25);
-            this.patientregistraionlabel.TabIndex = 1;
-            this.patientregistraionlabel.Text = "Patient Registration";
+            this.btnPatientReg.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnPatientReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPatientReg.ForeColor = System.Drawing.Color.Black;
+            this.btnPatientReg.Location = new System.Drawing.Point(338, 202);
+            this.btnPatientReg.Name = "btnPatientReg";
+            this.btnPatientReg.Size = new System.Drawing.Size(215, 35);
+            this.btnPatientReg.TabIndex = 6;
+            this.btnPatientReg.Text = "Patient Registration";
+            this.btnPatientReg.UseVisualStyleBackColor = false;
             // 
-            // patientinfolabel
+            // btnPatientInfo
             // 
-            this.patientinfolabel.AutoSize = true;
-            this.patientinfolabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.patientinfolabel.Location = new System.Drawing.Point(-1, 146);
-            this.patientinfolabel.Name = "patientinfolabel";
-            this.patientinfolabel.Size = new System.Drawing.Size(173, 25);
-            this.patientinfolabel.TabIndex = 2;
-            this.patientinfolabel.Text = "Patient Information";
+            this.btnPatientInfo.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnPatientInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPatientInfo.ForeColor = System.Drawing.Color.Black;
+            this.btnPatientInfo.Location = new System.Drawing.Point(632, 202);
+            this.btnPatientInfo.Name = "btnPatientInfo";
+            this.btnPatientInfo.Size = new System.Drawing.Size(215, 35);
+            this.btnPatientInfo.TabIndex = 7;
+            this.btnPatientInfo.Text = "Patient Information";
+            this.btnPatientInfo.UseVisualStyleBackColor = false;
             // 
-            // checkoutlabel
+            // btnPatientCheckOut
             // 
-            this.checkoutlabel.AutoSize = true;
-            this.checkoutlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.checkoutlabel.Location = new System.Drawing.Point(-2, 192);
-            this.checkoutlabel.Name = "checkoutlabel";
-            this.checkoutlabel.Size = new System.Drawing.Size(106, 25);
-            this.checkoutlabel.TabIndex = 3;
-            this.checkoutlabel.Text = "Check Out";
+            this.btnPatientCheckOut.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnPatientCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPatientCheckOut.ForeColor = System.Drawing.Color.Black;
+            this.btnPatientCheckOut.Location = new System.Drawing.Point(71, 281);
+            this.btnPatientCheckOut.Name = "btnPatientCheckOut";
+            this.btnPatientCheckOut.Size = new System.Drawing.Size(215, 35);
+            this.btnPatientCheckOut.TabIndex = 8;
+            this.btnPatientCheckOut.Text = "Patient CheckOut";
+            this.btnPatientCheckOut.UseVisualStyleBackColor = false;
             // 
-            // roominfolabel
+            // btnRoomInfo
             // 
-            this.roominfolabel.AutoSize = true;
-            this.roominfolabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.roominfolabel.Location = new System.Drawing.Point(-2, 242);
-            this.roominfolabel.Name = "roominfolabel";
-            this.roominfolabel.Size = new System.Drawing.Size(100, 25);
-            this.roominfolabel.TabIndex = 4;
-            this.roominfolabel.Text = "Room Info";
+            this.btnRoomInfo.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRoomInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnRoomInfo.ForeColor = System.Drawing.Color.Black;
+            this.btnRoomInfo.Location = new System.Drawing.Point(71, 202);
+            this.btnRoomInfo.Name = "btnRoomInfo";
+            this.btnRoomInfo.Size = new System.Drawing.Size(215, 35);
+            this.btnRoomInfo.TabIndex = 9;
+            this.btnRoomInfo.Text = "Room Information";
+            this.btnRoomInfo.UseVisualStyleBackColor = false;
             // 
-            // addstafflabel
+            // btnAddStaff
             // 
-            this.addstafflabel.AutoSize = true;
-            this.addstafflabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.addstafflabel.Location = new System.Drawing.Point(-2, 289);
-            this.addstafflabel.Name = "addstafflabel";
-            this.addstafflabel.Size = new System.Drawing.Size(93, 25);
-            this.addstafflabel.TabIndex = 5;
-            this.addstafflabel.Text = "Add Staff";
+            this.btnAddStaff.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnAddStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAddStaff.ForeColor = System.Drawing.Color.Black;
+            this.btnAddStaff.Location = new System.Drawing.Point(338, 281);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.Size = new System.Drawing.Size(215, 35);
+            this.btnAddStaff.TabIndex = 10;
+            this.btnAddStaff.Text = "Add Staff";
+            this.btnAddStaff.UseVisualStyleBackColor = false;
+            // 
+            // btnAddDoctor
+            // 
+            this.btnAddDoctor.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnAddDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAddDoctor.ForeColor = System.Drawing.Color.Black;
+            this.btnAddDoctor.Location = new System.Drawing.Point(632, 281);
+            this.btnAddDoctor.Name = "btnAddDoctor";
+            this.btnAddDoctor.Size = new System.Drawing.Size(215, 35);
+            this.btnAddDoctor.TabIndex = 11;
+            this.btnAddDoctor.Text = "Add Doctor";
+            this.btnAddDoctor.UseVisualStyleBackColor = false;
+            // 
+            // btnViewStaff
+            // 
+            this.btnViewStaff.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnViewStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnViewStaff.ForeColor = System.Drawing.Color.Black;
+            this.btnViewStaff.Location = new System.Drawing.Point(169, 380);
+            this.btnViewStaff.Name = "btnViewStaff";
+            this.btnViewStaff.Size = new System.Drawing.Size(215, 35);
+            this.btnViewStaff.TabIndex = 12;
+            this.btnViewStaff.Text = "View Staff";
+            this.btnViewStaff.UseVisualStyleBackColor = false;
+            // 
+            // btnViewDoctor
+            // 
+            this.btnViewDoctor.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnViewDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnViewDoctor.ForeColor = System.Drawing.Color.Black;
+            this.btnViewDoctor.Location = new System.Drawing.Point(470, 380);
+            this.btnViewDoctor.Name = "btnViewDoctor";
+            this.btnViewDoctor.Size = new System.Drawing.Size(215, 35);
+            this.btnViewDoctor.TabIndex = 13;
+            this.btnViewDoctor.Text = "View Doctor";
+            this.btnViewDoctor.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 461);
-            this.Controls.Add(this.addstafflabel);
-            this.Controls.Add(this.roominfolabel);
-            this.Controls.Add(this.checkoutlabel);
-            this.Controls.Add(this.patientinfolabel);
-            this.Controls.Add(this.patientregistraionlabel);
+            this.ClientSize = new System.Drawing.Size(1001, 598);
+            this.Controls.Add(this.btnViewDoctor);
+            this.Controls.Add(this.btnViewStaff);
+            this.Controls.Add(this.btnAddDoctor);
+            this.Controls.Add(this.btnAddStaff);
+            this.Controls.Add(this.btnRoomInfo);
+            this.Controls.Add(this.btnPatientCheckOut);
+            this.Controls.Add(this.btnPatientInfo);
+            this.Controls.Add(this.btnPatientReg);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.PanNorth;
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -126,10 +179,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label patientregistraionlabel;
-        private System.Windows.Forms.Label patientinfolabel;
-        private System.Windows.Forms.Label checkoutlabel;
-        private System.Windows.Forms.Label roominfolabel;
-        private System.Windows.Forms.Label addstafflabel;
+        private System.Windows.Forms.Button btnPatientReg;
+        private System.Windows.Forms.Button btnPatientInfo;
+        private System.Windows.Forms.Button btnPatientCheckOut;
+        private System.Windows.Forms.Button btnRoomInfo;
+        private System.Windows.Forms.Button btnAddStaff;
+        private System.Windows.Forms.Button btnAddDoctor;
+        private System.Windows.Forms.Button btnViewStaff;
+        private System.Windows.Forms.Button btnViewDoctor;
     }
 }
