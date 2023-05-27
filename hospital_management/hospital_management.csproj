@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Doctor.Designer.cs">
+      <DependentUpon>Add Doctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     <Compile Include="Staff_information.Designer.cs">
       <DependentUpon>Staff_information.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Doctor_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Doctor_Information.Designer.cs">
+      <DependentUpon>View_Doctor_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_patient_Information.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +126,9 @@
     <Compile Include="View_Staff_Information.Designer.cs">
       <DependentUpon>View_Staff_Information.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Doctor.resx">
+      <DependentUpon>Add Doctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_information.resx">
       <DependentUpon>Staff_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Doctor_Information.resx">
+      <DependentUpon>View_Doctor_Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_patient_Information.resx">
       <DependentUpon>view_patient_Information.cs</DependentUpon>
